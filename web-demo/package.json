@@ -1,0 +1,14 @@
+{
+  "name": "living-chess-steel-and-bone",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/model.test.mjs",
+    "start": "python3 -m http.server 4187 --bind 127.0.0.1",
+    "test:browser": "node tests/browser-smoke.mjs && node tests/browser-combat.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.59.1"
+  }
+}

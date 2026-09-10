@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#181c22">
+  <title>Boneboard — Living Chess</title>
+  <meta name="description" content="Meet the blue rook, crimson knight, royal tower, and dread tower. Move them, try their animations, and watch a tiny pixel-art duel.">
+  <meta property="og:title" content="Boneboard — Living Chess"><meta property="og:description" content="Four characters. One tiny battlefield. Try the animated chess playground.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181c22'/%3E%3Ctext x='10' y='49' font-size='48' fill='%23dcb67c'%3E♞%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script type="module" src="game.js"></script>
+</head>
+<body>
+ <div class="shell">
+  <header><a class="brand" href="./"><span class="brand-mark">♞</span> BONEBOARD</a><div class="header-right"><span class="edition">STEEL & BONE · FOUR PIECES</span><button id="share" class="quiet">Share preview <span aria-hidden="true">↗</span></button></div></header>
+  <main>
+   <section class="intro"><div><p class="eyebrow">A PIXEL-ART CHESS PLAYGROUND</p><h1>A little board.<br>A lot of character.</h1></div><p class="intro-copy">Two rivals. Two towers. One courtyard.<br>Bring the pieces to life, one move at a time.</p></section>
+   <div class="playground">
+    <section class="arena" aria-label="Chessboard preview">
+     <div class="arena-top"><span><i class="live-dot"></i> THE COURTYARD</span><button id="fullscreen" class="quiet" aria-label="Toggle fullscreen">Expand <span aria-hidden="true">⛶</span></button></div>
+     <canvas id="game-canvas" width="896" height="896" tabindex="0" aria-label="Interactive chessboard. Select a character with the controls, then click an enemy to approach and attack. Use arrow keys to choose a square and Enter to move or attack."></canvas>
+     <div class="arena-bottom"><span id="status" role="status" aria-live="polite">Preparing the pieces…</span><span class="board-note">8 × 8</span></div>
+    </section>
+    <aside class="controls">
+     <div class="section-label"><span>01</span> CHOOSE YOUR CHARACTER</div>
+     <button class="character" data-character="rook" aria-pressed="false" disabled><span class="portrait blue"><img src="assets/rook-v2/idle/idle-01.png" alt=""></span><span><strong>The Blue Rook</strong><small>STEADFAST · HUMAN</small></span><span class="select-dot"></span></button>
+     <button class="character" data-character="knight" aria-pressed="true" disabled><span class="portrait red"><img src="assets/knight/idle/idle-01.png" alt=""></span><span><strong>The Crimson Knight</strong><small>RESTLESS · UNDEAD</small></span><span class="select-dot"></span></button>
+     <button class="character" data-character="tower" aria-pressed="false" disabled><span class="portrait blue"><img src="assets/tower/idle/idle-01.png" alt=""></span><span><strong>The Royal Tower</strong><small>RESOLUTE · IVORY</small></span><span class="select-dot"></span></button>
+     <button class="character" data-character="tower-black" aria-pressed="false" disabled><span class="portrait red"><img src="assets/tower-black/idle/idle-01.png" alt=""></span><span><strong>The Dread Tower</strong><small>RELENTLESS · BASALT</small></span><span class="select-dot"></span></button>
+     <div class="selection-info"><span id="piece-symbol">♞</span><p id="move-hint">Moves in an L: two squares over, one across.</p></div>
+     <div class="divider"></div><div class="section-label"><span>02</span> TRY AN ANIMATION</div>
+     <div class="actions"><button data-action="idle" disabled><span>◌</span>Idle</button><button data-action="move" disabled><span>➜</span>Move</button><button data-action="strike" disabled><span>⚔</span>Attack</button><button data-action="death" disabled><span>†</span>Death</button></div>
+     <p class="control-hint">Tap a glowing square to move.<br>Tap an enemy to approach and attack.</p>
+     <div class="divider"></div>
+     <div class="duel-copy"><span class="eyebrow">A LITTLE FRIENDLY RIVALRY</span><h2>Let them settle it.</h2><p>A short encounter between steel and bone.</p></div>
+     <button id="duel" class="primary" disabled><span>▶</span> Watch the duel</button>
+     <button id="reset" class="reset" disabled>↻ &nbsp; Reset the board</button>
+     <p class="prototype-note">An animation study, with four characters.<br>Full chess rules are still to come.</p>
+    </aside>
+   </div>
+  </main>
+  <footer><span>SMALL PIECES. BIG PERSONALITIES.</span><span>CLICK · MOVE · REPEAT</span></footer>
+ </div>
+ <div id="toast" role="status"></div>
+</body>
+</html>

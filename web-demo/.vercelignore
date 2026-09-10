@@ -1,0 +1,5 @@
+tests
+test-artifacts
+progress.md
+node_modules
+*.log
