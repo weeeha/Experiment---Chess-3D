@@ -31,11 +31,12 @@ window.__livingChessReady = (async () => {
     scenery = createCourtyardMotion(flames,flags,cleanPlate,courtyard);
     await Promise.all(['rook', 'knight', 'tower', 'tower-black'].map(async id => {
       const folder = id === 'rook' ? 'rook-v2' : id;
-      const response = await fetch(`assets/${folder}/${id.startsWith('tower') ? 'tower' : id}-animation.json`);
+      const revision = id === 'rook' ? '?v=alpha-restored-1' : '';
+      const response = await fetch(`assets/${folder}/${id.startsWith('tower') ? 'tower' : id}-animation.json${revision}`);
       if (!response.ok) throw new Error('Could not load character information.');
       const meta = await response.json(), frames = {};
       await Promise.all(Object.entries(meta.animations).map(async ([name, spec]) => {
-        frames[name] = await Promise.all(Array.from({ length: spec.frames }, (_, i) => loadImage(`assets/${folder}/${name}/${name}-${String(i + 1).padStart(2, '0')}.png`)));
+        frames[name] = await Promise.all(Array.from({ length: spec.frames }, (_, i) => loadImage(`assets/${folder}/${name}/${name}-${String(i + 1).padStart(2, '0')}.png${revision}`)));
         totalFrames += frames[name].length;
       }));
       assets[id] = { meta, frames };

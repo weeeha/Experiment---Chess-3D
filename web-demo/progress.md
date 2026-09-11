@@ -86,3 +86,10 @@ animation playground, not a complete chess game.
 - Nine model tests pass. Existing browser smoke and new combat browser suite pass: clicking enemies/allies, pathing, attack/defeat, all four lunge directions, reset cancellation, mobile, keyboard, duel. 128 frames load, no browser errors. Reviewed combat screenshots and the prescribed game-client capture.
 - Evidence: test-artifacts/combat/validation.json, cardinal lunge captures and mobile.png. The separate user abbreviation PE is still undefined; no claim to have completed it.
 - Vercel explicit preview READY: dpl_8XBB9EJFw2FMZk58u7HP1zwQJdto at https://living-chess-steel-and-bone-ikynfwb1o-pegbo.vercel.app. Short alias https://boneboard.vercel.app updated to this deployment.
+
+## 2026-09-10 — Blue idle black-fringe repair
+
+- Traced the black jitter to the exporter's binary selection mask replacing original RGBA transparency. Restored source alpha for all eight Blue Rook idle frames; artwork RGB, dimensions, nonzero-alpha bounds, pivots and timings are unchanged. Other clips originated from RGB masters and are unchanged.
+- Preserved original idle source and reproducible repair script in the repository. Before runtime frames remain in ignored local output. Details/hashes: assets/rook-v2/TRANSPARENCY.md and alpha-restoration.json.
+- Added revision queries for Blue Rook frame/metadata loading and portrait so cached assets refresh. Source master and rebuild script are excluded from Vercel upload.
+- Nine model tests, existing interaction suite and combat suite passed with 128 frames and no browser errors. Reviewed before/after board captures and corrected close-up. Eight-frame pixel comparison confirmed original colours and placement; 15,804 formerly opaque fringe pixels recovered their low alpha.
