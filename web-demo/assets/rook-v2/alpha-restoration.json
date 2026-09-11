@@ -1,0 +1,90 @@
+[
+  {
+    "file": "idle/idle-01.png",
+    "sha256": "07e531b6e15a55e0802a4534a09e9bbb278b8cd1b66526f4aa2d4bbe5e8de6e7",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      138,
+      66,
+      258,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-02.png",
+    "sha256": "bd7e85ebcba9d85fc768cfb5cd5732b87b891f630dd0fda07a1b0500894ee59a",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      137,
+      64,
+      253,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-03.png",
+    "sha256": "21dca54d8b04a52a1e3261f61b81a735118660dc181cc280f5ca1a189781987b",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      135,
+      63,
+      251,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-04.png",
+    "sha256": "90fe0da49a30d18ee57bf8d18917720d80530660f6c8c74406e55190332a0ffe",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      136,
+      67,
+      254,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-05.png",
+    "sha256": "e9fb36849a05dd0146b33199dacf83004ca6991bb4191a0824c0b8d64ab19cf2",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      138,
+      68,
+      257,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-06.png",
+    "sha256": "3051b200c295bd9014e8e198aec622ab2122043e29e9c3e52079994259ca865f",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      140,
+      68,
+      254,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-07.png",
+    "sha256": "06b5c48196af8728888da90dd23b2a231fcfddf9c778056a95968c7b7bb248d3",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      138,
+      69,
+      256,
+      236
+    ]
+  },
+  {
+    "file": "idle/idle-08.png",
+    "sha256": "b161cd46f87637bc16d58e2c0dada22d8b55ef724cc57d3f339b9ac2ed314c80",
+    "sourceSha256": "04ab2e1324532aaa3e1e03df3c90927822a5d74124a62126364d517919d507ff",
+    "bbox": [
+      139,
+      68,
+      253,
+      236
+    ]
+  }
+]

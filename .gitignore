@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+.env*
+.vercel/
+/output/
+/web-demo/test-artifacts/

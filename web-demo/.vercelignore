@@ -1,0 +1,7 @@
+tests
+test-artifacts
+progress.md
+node_modules
+*.log
+scripts
+assets/rook-v2/source

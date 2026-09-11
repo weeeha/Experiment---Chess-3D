@@ -1,0 +1,42 @@
+{
+  "character": "crimson-mounted-skeleton-knight",
+  "facing": "right",
+  "frameWidth": 384,
+  "frameHeight": 256,
+  "pivot": {
+    "x": 192,
+    "y": 236,
+    "coordinates": "pixels-from-top-left"
+  },
+  "atlas": {
+    "file": "knight-animation-atlas-rgba.png",
+    "columns": 8,
+    "rows": 4
+  },
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 8,
+      "frameDurationMs": 160,
+      "playback": "loop"
+    },
+    "move": {
+      "row": 1,
+      "frames": 8,
+      "frameDurationMs": 105,
+      "playback": "loop"
+    },
+    "strike": {
+      "row": 2,
+      "frames": 8,
+      "frameDurationMs": 100,
+      "playback": "once"
+    },
+    "death": {
+      "row": 3,
+      "frames": 8,
+      "frameDurationMs": 140,
+      "playback": "once-hold-last"
+    }
+  }
+}
