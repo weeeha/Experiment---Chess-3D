@@ -1,0 +1,10 @@
+{
+  "project": "boneboard-play",
+  "url": "https://boneboard-play.vercel.app",
+  "deploymentId": "dpl_GvPpFnSj7vnQ4RYZECEzt5TVik3E",
+  "deploymentUrl": "https://boneboard-play-eqhrgozb9-pegbo.vercel.app",
+  "readyState": "READY",
+  "requestedTarget": "preview",
+  "reportedTarget": "production",
+  "note": "Vercel classified the first deployment of the separate new project as production."
+}
