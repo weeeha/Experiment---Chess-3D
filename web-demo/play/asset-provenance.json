@@ -1,0 +1,90 @@
+{
+  "origin": "Existing Boneboard Rendered Collection; generated September 10-11, 2026. Reused without modifying the source PNGs. Browser-derived isolated sprites and board tiles use the existing connected-silhouette extraction.",
+  "artwork": "Generated product renders, not photographs of manufactured sets.",
+  "files": [
+    {
+      "file": "assets/bone-board.png",
+      "sha256": "138212b4ec0e7abedf300dd8bfda67d98bd099cf651752b6db62682811866374",
+      "source": "../modern/rendered/assets/bone-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/bone.png",
+      "sha256": "8a45d2996311baab7bc42051d4e1f8bab466b595a47f37cb92b98a595d0ee26c",
+      "source": "../modern/rendered/assets/bone.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/fashion-board.png",
+      "sha256": "599c0ebc10d107ebe8e83096026dc82f3c474540cd9e20ee315220ebfc8390dc",
+      "source": "../modern/rendered/assets/fashion-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/fashion.png",
+      "sha256": "631b57efd60f3c8db0e5096cbb7a5dfafa068856bb3cddae63f6b620763ae699",
+      "source": "../modern/rendered/assets/fashion.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/khokhloma-board.png",
+      "sha256": "e4dfc2530e9c6d776ed5d4ab283259122694d638196afbdf08ef6035d688e610",
+      "source": "../modern/rendered/assets/khokhloma-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/khokhloma.png",
+      "sha256": "2c0436aac6d5f6312913fcfa4be03c927a51e9ab2bfd6ba9bbc4e3f05a7fc4ad",
+      "source": "../modern/rendered/assets/khokhloma.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/metal-board.png",
+      "sha256": "859f91f7dba646bd76463ce2fdd4437b1069502c8d77b1f70a29664e31511b96",
+      "source": "../modern/rendered/assets/metal-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/metal.png",
+      "sha256": "76a6169b6804921ea972d1068f554c7035b9cbd41d6754d788559a649d6596ff",
+      "source": "../modern/rendered/assets/metal.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/porcelain-board.png",
+      "sha256": "c61dbbc5c5d597827d5537c1ea9b291fd44e44f937851e61e0b4494129474af7",
+      "source": "../modern/rendered/assets/porcelain-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/porcelain.png",
+      "sha256": "3d92df792dc5e91a376452211b28262693425b9792c3b97b8904811aec1c647d",
+      "source": "../modern/rendered/assets/porcelain.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/royal-board.png",
+      "sha256": "a2745b3e622b15d866341860e01401fad993865873b5bdb24173bb5eef30ca44",
+      "source": "../modern/rendered/assets/royal-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/royal.png",
+      "sha256": "a47e2d954b1e5c8b61039e4af9d6284debfd0cf86287f27469b8995c3b20cf7f",
+      "source": "../modern/rendered/assets/royal.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/simple-board.png",
+      "sha256": "05b869679bd26e04365b6c9c7b9d58f1d8758c5107fdb55aee684bf9151379ed",
+      "source": "../modern/rendered/assets/simple-board.png",
+      "unchanged": true
+    },
+    {
+      "file": "assets/simple.png",
+      "sha256": "a13a11ffad1386c87bdcf16c78781360b1fa6721ee4b8e18e093053776febd65",
+      "source": "../modern/rendered/assets/simple.png",
+      "unchanged": true
+    }
+  ]
+}

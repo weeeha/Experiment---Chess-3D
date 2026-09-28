@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Boneboard — The Material Collection</title>
+  <meta name="description" content="Explore three contemporary chess sets. Explore Modern Simple, Khokhloma, and Bone & Gold as textured 3D pieces.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23272825'/%3E%3Ctext x='10' y='49' font-size='48' fill='%23e2ca98'%3E♞%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"../vendor/three.module.js"}}</script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="brand" href="./"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>BONEBOARD<span class="brand-divider"></span><span class="brand-edition">MATERIAL STUDIES</span></a>
+      <span class="edition"><a href="../rendered/">Image collection ↗</a></span>
+    </header>
+    <main>
+      <div class="page-heading"><div><p class="eyebrow">CHESS, CONSIDERED.</p><h1>Made of a different kind.</h1></div><p class="intro-note">One game. Three finishes.<br>Turn the pieces. See the difference.</p></div>
+      <div class="workspace">
+        <section class="viewer" aria-label="Interactive chess collection">
+          <div class="viewer-toolbar"><div class="segmented" aria-label="Collection view"><button data-view="board" aria-pressed="true">The board</button><button data-view="pieces" aria-pressed="false">The pieces</button></div><button id="fullscreen" class="icon-button" title="Expand view (F)" aria-label="Expand view">⛶</button></div>
+          <div id="stage"><canvas id="chess-canvas" tabindex="0" aria-label="3D chessboard. Drag to rotate. Scroll to zoom. Select a piece, then an empty square to rearrange. Arrow keys choose a square; Enter selects or moves a piece; Escape clears selection."></canvas><div id="loading" role="status">Setting the table<span>Preparing your collection…</span></div><div class="stage-caption"><span id="scene-number">01 / 03</span><h2 id="scene-title">Modern Simple</h2><p id="scene-subtitle">Quiet forms. A softer touch.</p></div><div id="side-toggle" class="segmented side-toggle" aria-label="Piece color" hidden><button data-side="white" aria-pressed="true"><i class="side-dot light"></i><span class="side-label">Chalk</span></button><button data-side="black" aria-pressed="false"><i class="side-dot dark"></i><span class="side-label">Graphite</span></button></div></div>
+          <div class="viewer-footer"><p id="interaction-hint" role="status" aria-live="polite">Drag to rotate <span>·</span> Scroll to zoom</p><div class="view-tools"><button id="top-view" title="Look directly down at the board">Top view</button><button id="reset-view" title="Restore the original camera angle">Reset view <span aria-hidden="true">↺</span></button></div></div>
+        </section>
+        <aside class="sidebar" aria-label="Chess styles and individual pieces">
+          <div class="sidebar-heading"><p class="eyebrow">01 — THE FINISH</p><h2>Choose your style.</h2><p>A different character. The same game.</p></div>
+          <div class="style-options" aria-label="Choose a chess style">
+            <button class="style-card" data-style="simple" aria-pressed="true"><span class="style-image"><img id="thumb-simple" alt="Matte porcelain king"></span><span class="style-copy"><strong>Modern Simple</strong><small>MATTE PORCELAIN</small><span class="swatches"><i style="--swatch:#eee9de"></i><i style="--swatch:#b8b5a9"></i><i style="--swatch:#303730"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="khokhloma" aria-pressed="false"><span class="style-image"><img id="thumb-khokhloma" alt="Painted Khokhloma king"></span><span class="style-copy"><strong>Khokhloma</strong><small>PAINTED LACQUER</small><span class="swatches"><i style="--swatch:#a9090d"></i><i style="--swatch:#caa14b"></i><i style="--swatch:#171914"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="bone" aria-pressed="false"><span class="style-image"><img id="thumb-bone" alt="Ivory and gold king"></span><span class="style-copy"><strong>Bone & Gold</strong><small>SATIN & METAL</small><span class="swatches"><i style="--swatch:#e7dbc2"></i><i style="--swatch:#d6af62"></i><i style="--swatch:#252c25"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+          </div>
+          <p id="material-note" class="material-note">Fine matte porcelain. Chalk and graphite. Softly rounded edges.</p>
+          <div class="piece-section"><div class="section-heading"><p class="eyebrow">02 — THE DETAILS</p><button id="all-pieces" class="text-button">View all ↗</button></div><h3>Every piece, considered.</h3><div id="piece-options" class="piece-options" aria-label="Inspect an individual chess piece"></div></div>
+          <div class="sidebar-foot"><button id="reset-board" class="reset-board">Reset the board <span aria-hidden="true">↻</span></button><p>Free arrangement · select a piece,<br>then an empty square to move it.</p></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="page-footer"><span>THREE MATERIALS. THIRTY-TWO PIECES.</span><span><a href="../">Compare the original 3D study ↗</a></span></footer>
+  </div>
+</body>
+</html>

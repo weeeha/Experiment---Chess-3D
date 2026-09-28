@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#242522"><meta name="description" content="Your game. Your style. Play chess with eight original Boneboard collections.">
+  <title>Boneboard — Play</title><link rel="icon" href="assets/icons/crown-simple.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="./" aria-label="Boneboard Play home"><img src="assets/icons/crown-simple.svg" alt=""><span>BONEBOARD</span><span class="brand-edition">PLAY EDITION</span></a><span class="header-note">A different kind of chess.</span></header>
+  <main class="workspace">
+    <section class="game" aria-label="Chess game">
+      <div class="game-heading"><span><img class="icon" src="assets/icons/lightning.svg" alt=""> <span id="game-kind">POSITION STUDY</span></span><span class="mode-label" id="mode-label">Untimed practice</span></div>
+      <div class="player" id="player-top"></div>
+      <div class="board-frame" id="board-frame"><div class="board" id="board" role="group" aria-label="Chessboard. Select a piece, then a highlighted square."></div><div class="loading" id="loading" role="status">Setting the table…</div></div>
+      <div class="player" id="player-bottom"></div>
+      <div class="game-toolbar"><span id="turn-label" role="status" aria-live="polite">White to move</span><div class="board-tools"><button class="icon-button" id="undo" aria-label="Undo last move" title="Undo last move" disabled><img class="icon" src="assets/icons/arrow-u-up-left.svg" alt=""></button><button class="icon-button" id="flip" aria-label="Flip board" title="Flip board"><img class="icon" src="assets/icons/arrows-down-up.svg" alt=""></button><button class="icon-button" id="restore" aria-label="Restore reference position" title="Restore reference position"><img class="icon" src="assets/icons/arrow-counter-clockwise.svg" alt=""></button><button class="icon-button" id="expand" aria-label="Expand board" title="Expand board"><img class="icon" src="assets/icons/corners-out.svg" alt=""></button></div></div>
+      <p class="board-hint" id="board-hint">Select a piece to see where it can go.</p>
+    </section>
+    <aside class="sidebar" aria-label="Game and appearance settings">
+      <div class="sidebar-intro"><p class="eyebrow">THE PLAYING ROOM</p><h1>Your game.<br> Your style.</h1><p>A familiar game, a little more you.</p></div>
+      <div class="tabs" role="tablist" aria-label="Sidebar"><button id="styles-tab" role="tab" aria-controls="styles-panel" aria-selected="true">Styles <span id="style-count">08</span></button><button id="moves-tab" role="tab" aria-controls="moves-panel" aria-selected="false" tabindex="-1">Moves <span id="move-count">00</span></button></div>
+      <section id="styles-panel" role="tabpanel" aria-labelledby="styles-tab"><div class="style-options" id="style-options"></div><p class="style-note" id="style-note">Ivory, charcoal, and a touch of gold.</p></section>
+      <section id="moves-panel" role="tabpanel" aria-labelledby="moves-tab" hidden><div class="moves-heading"><span>WHITE</span><span>BLACK</span></div><div id="move-list"></div><p class="moves-note">Local two-player chess. Take turns on the same screen.</p></section>
+      <div class="new-game-area"><div class="game-settings"><label for="time-control">Time per player</label><select id="time-control"><option value="180">3 minutes</option><option value="300">5 minutes</option><option value="600">10 minutes</option><option value="0">No clock</option></select></div><button class="new-game" id="new-game"><img class="icon" src="assets/icons/plus.svg" alt="">New game</button><button class="pause-button" id="pause" hidden>Pause clocks</button><p class="local-note">Two players. One beautiful board.</p></div>
+    </aside>
+  </main>
+  <footer class="page-footer"><span>THE BONEBOARD COLLECTION</span><span>Made for the love of the game.</span></footer>
+  <dialog id="promotion-dialog"><p class="eyebrow">PAWN PROMOTION</p><h2>Choose your piece.</h2><div id="promotion-options"></div><button id="cancel-promotion">Cancel</button></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

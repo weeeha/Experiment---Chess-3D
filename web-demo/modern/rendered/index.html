@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Boneboard — The Rendered Collection</title>
+  <meta name="description" content="Explore three contemporary chess sets. Change the style, play a little chess with Silly AI, and inspect every piece.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23272825'/%3E%3Ctext x='10' y='49' font-size='48' fill='%23e2ca98'%3E♞%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="brand" href="./"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>BONEBOARD<span class="brand-divider"></span><span class="brand-edition">FORM STUDIES</span></a>
+      <span class="edition"><a href="../" class="version-link">Explore the 3D study ↗</a></span>
+    </header>
+    <main>
+      <div class="page-heading"><div><p class="eyebrow">CHESS, CONSIDERED.</p><h1>A different point of view.</h1></div><p class="intro-note">Beautiful materials. A clearer view.<br>Seven sets, down to the last detail.</p></div>
+      <div class="workspace">
+        <section class="viewer" aria-label="Interactive chess collection">
+          <div class="viewer-toolbar"><div class="segmented" aria-label="Collection view"><button data-view="board" aria-pressed="true">The board</button><button data-view="pieces" aria-pressed="false">The pieces</button></div><button id="fullscreen" class="icon-button" title="Expand view (F)" aria-label="Expand view">⛶</button></div>
+          <div id="stage"><canvas id="chess-canvas" tabindex="0" aria-label="Top-down chessboard. Select a piece, then an empty square to arrange. Arrow keys choose squares; Enter selects or moves; Escape clears selection."></canvas><div id="loading" role="status">Setting the table<span>Preparing your collection…</span></div><div class="stage-caption"><span id="scene-number">01 / 07</span><h2 id="scene-title">Bone & Gold</h2><p id="scene-subtitle">Warmth, with an edge.</p></div><div id="side-toggle" class="segmented side-toggle" aria-label="Piece color" hidden><button data-side="white" aria-pressed="true"><i class="side-dot light"></i>Light</button><button data-side="black" aria-pressed="false"><i class="side-dot dark"></i>Dark</button></div></div>
+          <div class="viewer-footer"><p id="interaction-hint" role="status" aria-live="polite">Select a piece, then an empty square.</p><div class="view-tools"><button id="toggle-pieces" aria-pressed="false">Board only</button><span class="fixed-view">TOP-DOWN VIEW</span></div></div>
+        </section>
+        <aside class="sidebar" aria-label="Chess styles and individual pieces">
+          <div class="sidebar-heading"><p class="eyebrow">01 — THE FINISH</p><h2>Choose your style.</h2><p>A different character. The same game.</p></div>
+          <div class="style-options" aria-label="Choose a chess style">
+            <button class="style-card" data-style="bone" aria-pressed="true"><span class="style-image"><img id="thumb-bone" alt="Bone and gold king"></span><span class="style-copy"><strong>Bone & Gold</strong><small>ART DECO</small><span class="swatches"><i style="--swatch:#e5d9bf"></i><i style="--swatch:#bf9859"></i><i style="--swatch:#30302e"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="metal" aria-pressed="false"><span class="style-image"><img id="thumb-metal" alt="Brushed metal king"></span><span class="style-copy"><strong>Metal</strong><small>GEOMETRIC</small><span class="swatches"><i style="--swatch:#b8bec3"></i><i style="--swatch:#70777d"></i><i style="--swatch:#343b43"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="simple" aria-pressed="false"><span class="style-image"><img id="thumb-simple" alt="Matte minimal king"></span><span class="style-copy"><strong>Modern Simple</strong><small>MINIMAL</small><span class="swatches"><i style="--swatch:#e9e5db"></i><i style="--swatch:#b4afa4"></i><i style="--swatch:#484b47"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="porcelain" aria-pressed="false"><span class="style-image"><img id="thumb-porcelain" alt="Blue and white porcelain king"></span><span class="style-copy"><strong>Blue Porcelain</strong><small>HAND-PAINTED</small><span class="swatches"><i style="--swatch:#f5f2e9"></i><i style="--swatch:#7193b7"></i><i style="--swatch:#254874"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="fashion" aria-pressed="false"><span class="style-image"><img id="thumb-fashion" alt="Tailored Fashion House king"></span><span class="style-copy"><strong>Fashion House</strong><small>COUTURE</small><span class="swatches"><i style="--swatch:#e0d5c4"></i><i style="--swatch:#773039"></i><i style="--swatch:#29282a"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="royal" aria-pressed="false"><span class="style-image"><img id="thumb-royal" alt="Intricately carved Royal Court king"></span><span class="style-copy"><strong>Royal Court</strong><small>COLLECTOR’S SET</small><span class="swatches"><i style="--swatch:#e1d1ad"></i><i style="--swatch:#aa8351"></i><i style="--swatch:#3b2c23"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="medieval" aria-pressed="false"><span class="style-image"><img id="thumb-medieval" alt="Azure and gold Heraldic Europe king"></span><span class="style-copy"><strong>Heraldic Europe</strong><small>MEDIEVAL PAGEANTRY</small><span class="swatches"><i style="--swatch:#1856ad"></i><i style="--swatch:#b42535"></i><i style="--swatch:#bd9444"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="khokhloma" aria-pressed="false"><span class="style-image"><img id="thumb-khokhloma" alt="Red and gold Khokhloma king"></span><span class="style-copy"><strong>Khokhloma</strong><small>PAINTED LACQUER</small><span class="swatches"><i style="--swatch:#d93624"></i><i style="--swatch:#cf9b39"></i><i style="--swatch:#24221f"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+          </div>
+          <p id="material-note" class="material-note">Satin ivory. Champagne gold. A little everyday grandeur.</p>
+          <div class="piece-section"><div class="section-heading"><p class="eyebrow">02 — THE DETAILS</p><button id="all-pieces" class="text-button">View all ↗</button></div><h3>Every piece, considered.</h3><div id="piece-options" class="piece-options" aria-label="Inspect an individual chess piece"></div></div>
+          <div class="sidebar-foot"><button id="reset-board" class="reset-board">Reset the board <span aria-hidden="true">↻</span></button><p>You play light. Select a piece,<br>then a marked square to move it.</p></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="page-footer"><span>32 PIECES. ENDLESS POSSIBILITIES.</span><span>DESIGNED TO BE PLAYED. MADE TO BE SEEN.</span></footer>
+  </div>
+</body>
+</html>

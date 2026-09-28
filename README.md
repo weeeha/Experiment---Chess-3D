@@ -1,5 +1,7 @@
 # Boneboard
 
+New: [The Modern Collection](web-demo/modern/README.md) — a separate 3D visual prototype with a right-hand style switcher, complete board, and individual piece inspection. Published at https://boneboard-modern.vercel.app. A second collection uses a fixed top-down board and photographic image pieces at https://boneboard-modern.vercel.app/rendered/. Local paths are `/modern/` and `/modern/rendered/`. Both local collections now include Silly AI, a deliberately weak opponent with legal moves, playful commentary, and an Arrange freely option. This gameplay update has not yet been published.
+
 An animated pixel-art chess playground with four characters in a medieval courtyard. Public preview: [boneboard.vercel.app](https://boneboard.vercel.app).
 
 Select a character in the sidebar, click an empty highlighted square to move, or click an enemy to approach and attack. Blue Rook and Royal Tower are allies; Crimson Knight and Dread Tower form the opposing side. Attacks follow the existing movement patterns to an adjacent square, lunge toward the target, and trigger its collapse. The attacker returns to the approach square.

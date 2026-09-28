@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Boneboard — The Modern Collection</title>
+  <meta name="description" content="Explore three contemporary chess sets. Change the style, play a little chess with Silly AI, and inspect every piece.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23272825'/%3E%3Ctext x='10' y='49' font-size='48' fill='%23e2ca98'%3E♞%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="brand" href="./"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>BONEBOARD<span class="brand-divider"></span><span class="brand-edition">FORM STUDIES</span></a>
+      <span class="edition"><a href="rendered/">Explore the top-down collection ↗</a></span>
+    </header>
+    <main>
+      <div class="page-heading"><div><p class="eyebrow">CHESS, CONSIDERED.</p><h1>A study in good form.</h1></div><p class="intro-note">One game. Three perspectives.<br>Find the set that feels like you.</p></div>
+      <div class="workspace">
+        <section class="viewer" aria-label="Interactive chess collection">
+          <div class="viewer-toolbar"><div class="segmented" aria-label="Collection view"><button data-view="board" aria-pressed="true">The board</button><button data-view="pieces" aria-pressed="false">The pieces</button></div><button id="fullscreen" class="icon-button" title="Expand view (F)" aria-label="Expand view">⛶</button></div>
+          <div id="stage"><canvas id="chess-canvas" tabindex="0" aria-label="3D chessboard. Drag to rotate. Scroll to zoom. Select a piece, then an empty square to rearrange. Arrow keys choose a square; Enter selects or moves a piece; Escape clears selection."></canvas><div id="loading" role="status">Setting the table<span>Preparing your collection…</span></div><div class="stage-caption"><span id="scene-number">01 / 03</span><h2 id="scene-title">Bone & Gold</h2><p id="scene-subtitle">Warmth, with an edge.</p></div><div id="side-toggle" class="segmented side-toggle" aria-label="Piece color" hidden><button data-side="white" aria-pressed="true"><i class="side-dot light"></i>Light</button><button data-side="black" aria-pressed="false"><i class="side-dot dark"></i>Dark</button></div></div>
+          <div class="viewer-footer"><p id="interaction-hint" role="status" aria-live="polite">Drag to rotate <span>·</span> Scroll to zoom</p><div class="view-tools"><button id="top-view" title="Look directly down at the board">Top view</button><button id="reset-view" title="Restore the original camera angle">Reset view <span aria-hidden="true">↺</span></button></div></div>
+        </section>
+        <aside class="sidebar" aria-label="Chess styles and individual pieces">
+          <div class="sidebar-heading"><p class="eyebrow">01 — THE FINISH</p><h2>Choose your style.</h2><p>A different character. The same game.</p></div>
+          <div class="style-options" aria-label="Choose a chess style">
+            <button class="style-card" data-style="bone" aria-pressed="true"><span class="style-image"><img id="thumb-bone" alt="Bone and gold king"></span><span class="style-copy"><strong>Bone & Gold</strong><small>ART DECO</small><span class="swatches"><i style="--swatch:#e5d9bf"></i><i style="--swatch:#bf9859"></i><i style="--swatch:#30302e"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="metal" aria-pressed="false"><span class="style-image"><img id="thumb-metal" alt="Brushed metal king"></span><span class="style-copy"><strong>Metal</strong><small>GEOMETRIC</small><span class="swatches"><i style="--swatch:#b8bec3"></i><i style="--swatch:#70777d"></i><i style="--swatch:#343b43"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+            <button class="style-card" data-style="simple" aria-pressed="false"><span class="style-image"><img id="thumb-simple" alt="Matte minimal king"></span><span class="style-copy"><strong>Modern Simple</strong><small>MINIMAL</small><span class="swatches"><i style="--swatch:#e9e5db"></i><i style="--swatch:#b4afa4"></i><i style="--swatch:#484b47"></i></span></span><span class="radio-mark" aria-hidden="true"></span></button>
+          </div>
+          <p id="material-note" class="material-note">Satin ivory. Champagne gold. A little everyday grandeur.</p>
+          <div class="piece-section"><div class="section-heading"><p class="eyebrow">02 — THE DETAILS</p><button id="all-pieces" class="text-button">View all ↗</button></div><h3>Every piece, considered.</h3><div id="piece-options" class="piece-options" aria-label="Inspect an individual chess piece"></div></div>
+          <div class="sidebar-foot"><button id="reset-board" class="reset-board">Reset the board <span aria-hidden="true">↻</span></button><p>You play light. Select a piece,<br>then a marked square to move it.</p></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="page-footer"><span>32 PIECES. ENDLESS POSSIBILITIES.</span><span>DESIGNED TO BE PLAYED. MADE TO BE SEEN.</span></footer>
+  </div>
+</body>
+</html>

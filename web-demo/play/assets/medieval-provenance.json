@@ -1,0 +1,54 @@
+{
+  "name": "Heraldic Europe",
+  "slug": "medieval",
+  "generator": "built-in image generation tool",
+  "date": "2026-09-11",
+  "concept": "output/concepts/heraldic-europe-v1/heraldic-europe.png",
+  "pieces": {
+    "file": "medieval.png",
+    "source": "/Users/nickv/.codex/generated_images/01a08e67-c339-7c00-9829-bebdd32f42c4/exec-2134cc90-052b-4800-8f6b-6a5ce50c3f4d.png",
+    "prompt": "Prepare this twelve-piece medieval chess atlas for a game. Preserve all twelve miniatures, their exact designs, blue/red heraldic colors and the six-column two-row layout. Replace every part of the checkerboard background, including all gaps around and inside the figures, with a perfectly uniform vivid pure GREEN screen color RGB(0,255,0), hex #00FF00. No checkerboard, no transparency, no shadows, no gradients, no green reflected light on the figures. Solid flat pure green background. Each of the 12 figures must fit completely inside its own 256x512 grid cell: slightly shrink each object around its center as needed so there is at least 12 pixels of clean green padding on all sides of each cell. The knight in column three must not touch the rook or bishop cells. No cropping, no additional pieces, no redesign, no text. Output 1536x1024.",
+    "preparationPrompt": "Use case: background-extraction / product-mockup.\nEdit the attached approved \"Heraldic Europe\" chess concept sheet into a game-ready transparent PNG sprite atlas. Preserve the identity, paint colors, heraldic motifs, rich sculptural materials, detailed armor, blue and red courts, and all twelve miniature designs. The only changes are removing the parchment background and all floor shadows, improving padding and making weapons more compact for board use.\nOutput exactly 1536x1024 RGBA with ACTUAL TRANSPARENT ALPHA everywhere outside the objects, including holes within figures. NO painted checkerboard, NO colored backdrop, NO floor plane, NO glow and NO cast shadows.\nLayout: exactly six equal columns and two equal rows, twelve isolated whole objects. Cell width 256, cell height 512. Top row is blue-and-gold Azure with white horse; bottom row crimson-and-ivory Crimson with brown horse. Within EACH row left to right: pawn foot soldier, rook castle, knight full mounted horse and armored rider, bishop, queen, king. Keep every part of each object fully inside its own cell with at least 18 px transparent padding horizontally and 30 px vertically. Base center positions x=128,384,640,896,1152,1408; base bottoms y=455 and 967. No touching, missing, repeated, merged, or clipped figures.\nPreserve the low round walnut and gold bases, original front three-quarter product camera, consistent soft upper-left lighting and realistic painted-resin and pewter appearance. Keep the bishop croziers attached and inside their cells. Shorten the pawn polearm to end near helmet height; point knight sword diagonally upward but keep it within the knight cell and no higher than its plume. Give the pawns slightly smaller simpler scale. Approximate total heights including plinth and ornaments: pawn 300 px, rook 325 px, knight 390 px, bishop 385 px, queen 395 px, king 425 px. Knight remains complete horse and rider. Do not enlarge heads. Do not redesign the approved characters. Absolutely no text, UI or labels.",
+    "format": "RGB green-screen source. The browser applies chroma-key transparency at load time; the source image is not modified.",
+    "columnEdges": [
+      0,
+      240,
+      488,
+      778,
+      1018,
+      1274,
+      1536
+    ],
+    "rows": [
+      "Azure / white",
+      "Crimson / black"
+    ],
+    "columns": [
+      "pawn",
+      "rook",
+      "knight",
+      "bishop",
+      "queen",
+      "king"
+    ],
+    "sha256": "d9d732756c166c170fcd577dc035e4b4dc43175c8bdf8de22c0fa82e60996829"
+  },
+  "board": {
+    "file": "medieval-board.png",
+    "source": "/Users/nickv/.codex/generated_images/01a08e67-c339-7c00-9829-bebdd32f42c4/exec-fc111ce8-058d-4fe5-b6ac-9d1707fcae3d.png",
+    "prompt": "Use case: product-mockup.\nGenerate a photorealistic MATERIAL TEXTURE ATLAS for the approved Heraldic Europe miniature chess set. Landscape image exactly 1536x1024. Precise edge-to-edge grid of THREE COLUMNS and TWO ROWS. Each of the six cells is a square 512x512 orthographic material swatch. No margins, gutters, labels or text. Camera exactly perpendicular above each surface, absolutely flat, no perspective, thickness, shadows or horizon. Every cell is filled completely by its material.\nUpper-left: warm pale honey limestone, subtle fine grain and extremely delicate natural variation, a quiet unornamented playing square.\nUpper-middle: muted medium charcoal-gray slate, subtle stone grain and a little warm gray mineral character. Clearly darker than limestone but avoid near-black so the dark walnut bases and blue and crimson figures stay legible. Smooth matte unornamented playing square.\nUpper-right: rich warm dark walnut with fine straight longitudinal grain and subtle hand-polished satin finish, intended for the chessboard frame. Keep grain straight; no planks or tiled pattern within the swatch.\nBottom row: slight natural alternate versions of the SAME three materials in the SAME order: limestone, slate, walnut.\nSophisticated miniature medieval tournament collector-set board, restrained premium craftsmanship. Uniform neutral product light. NO chessboard within a cell, no objects, no people, no miniature pieces, no symbols, no painted heraldry across tile centers. Opaque PNG.",
+    "format": "RGB 1536x1024. Three 512-pixel columns: limestone, slate, walnut; second row provides material variations.",
+    "sha256": "307269d008f442369eb4d39acec259a0fabeb82f0997492c40b45ad464510773"
+  },
+  "rejected": [
+    {
+      "source": "exec-acd2d934-1f47-4403-a101-14f8717a0321.png",
+      "reason": "RGB with a baked-in checker pattern instead of alpha."
+    },
+    {
+      "source": "exec-e7ac25a9-1d16-4f6b-8207-aa148b365d63.png",
+      "prompt": "Remove the gray-and-white checkerboard background from this image. Return a transparent-background PNG with a real RGBA alpha channel. The checkerboard must be removed completely, including between horse legs and around croziers. Keep all twelve painted medieval chess miniatures exactly intact: preserve their colors, details, positions, scale, bases and six-column two-row layout. No replacement backdrop, no floor, no shadow, no checker pattern. This is a background removal edit. Actual transparency is mandatory.",
+      "reason": "Second attempt also returned RGB with a baked-in checker pattern."
+    }
+  ]
+}

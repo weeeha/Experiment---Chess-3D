@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "created": "2026-09-11",
+  "reference": "../../rendered/assets/khokhloma.png",
+  "attempts": [
+    {
+      "prompt": "Use case: stylized-concept.\nAsset type: flat RGBA color texture for wrapping around real 3D chess pieces, not a render.\nInput image 1 is a STYLE REFERENCE ONLY: the Khokhloma chess set. Derive its red berries, muted green leaves, and warm golden featherlike foliage into a NEW FLAT painted ornamental texture.\nCreate one square 1024 x 1024 image with a genuinely transparent background. A refined Khokhloma folk painting pattern: flowing warm ochre-gold stems, elongated gold leaves with fine brush strokes, small red rowan berries, subtle muted green leaf accents. Four gracefully curving botanical sprigs arranged as a loose harmonious repeating field. Medium-large clear motifs, approximately 55% artwork and 45% transparent negative space. Make the gold dominant, red berries small accents. Paint flat local colors. Warm gold pigments should be ochre yellow, not beige white. Sophisticated hand-painted ornamental detailing, clear enough to read on small chess pieces.\nComposition is a flat square material swatch seen exactly head-on with no perspective or surface curvature. Every motif stays inside a 5% transparent margin on all edges, allowing the swatch to repeat without chopped leaves or obvious boundary lines. No frame, no border.\nABSOLUTE REQUIREMENTS: transparent RGBA background, no black or red filled backdrop, no chess pieces, no objects, no studio lighting, no highlights, no metallic reflections, no shadows, no fabric, no paper, no text, no labels, no watermark. This is the paint layer only, to be composited over red and black lacquer by a real-time 3D renderer.",
+      "output": "/Users/nickv/.codex/generated_images/01a08e5a-dc4d-75e1-bed7-55ec4ff3b201/exec-f3cab5f5-2794-45e4-8737-7b15c3469d21.png",
+      "accepted": false,
+      "reason": "RGB image contained a simulated checkerboard rather than actual transparency."
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Asset type: flat 3D texture paint layer.\nEdit the supplied ornamental image. Keep the golden foliage, red berries, green leaves, and overall arrangement.\nReplace EVERY grey checkerboard/background pixel with solid uniform pure black RGB #000000. There must be absolutely no visible checkerboard, paper, cloth, ripples, folds, grain, gradients, shadows, vignette or lighting in the background. Background is a PERFECT FLAT BLACK color, extending to all four image edges. Pure black is the key color used by the 3D material to isolate the painted pigment.\nAlso flatten the artwork so it reads as painted color, without any fabric wrinkles or raised/debossed shading. Keep the expressive brush strokes inside gold leaves, green leaves, and berries. Preserve the outer clear black margin so the texture can repeat cleanly. Output one square texture swatch, no words, no labels, no chess objects. Do not simulate transparency with checkerboard. Opaque pure-black background is explicitly requested.",
+      "output": "/Users/nickv/.codex/generated_images/01a08e5a-dc4d-75e1-bed7-55ec4ff3b201/exec-8c8f6989-4ee6-4337-b25c-302a417a5648.png",
+      "accepted": true,
+      "runtime": "khokhloma-paint.png",
+      "processing": "Unchanged generated PNG. The material shader derives paint coverage from the black key background and blends onto red or black lacquer. Gold-like pigment gets a separate metalness response. This is a colour-derived approximation, not an authored PBR mask."
+    }
+  ]
+}

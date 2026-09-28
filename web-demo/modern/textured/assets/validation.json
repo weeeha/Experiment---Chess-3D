@@ -1,0 +1,12 @@
+{
+  "asset": "khokhloma-paint.png",
+  "sha256": "92ecbcba7fe95bbc1de47f5c15d592b7abf30ccc90fcba35d13236957b692b00",
+  "matches_generated_original": true,
+  "mode": "RGB",
+  "size": [
+    1254,
+    1254
+  ],
+  "black_key_fraction": 0.5703636719753566,
+  "maximum_outer_edge_channel": 1
+}
