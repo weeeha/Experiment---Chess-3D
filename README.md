@@ -1,6 +1,10 @@
 # Boneboard
 
-New: [The Modern Collection](web-demo/modern/README.md) — a separate 3D visual prototype with a right-hand style switcher, complete board, and individual piece inspection. Published at https://boneboard-modern.vercel.app. A second collection uses a fixed top-down board and photographic image pieces at https://boneboard-modern.vercel.app/rendered/. Local paths are `/modern/` and `/modern/rendered/`. Both local collections now include Silly AI, a deliberately weak opponent with legal moves, playful commentary, and an Arrange freely option. This gameplay update has not yet been published.
+![Boneboard Modern Collection: 3D board in the Bone & Gold style with the style switcher](docs/screenshots/overview.webp)
+
+**Live:** https://boneboard-modern.vercel.app
+
+New: [The Modern Collection](web-demo/modern/README.md) — a separate 3D visual prototype with a right-hand style switcher, complete board, and individual piece inspection. Published at https://boneboard-modern.vercel.app. A second collection uses a fixed top-down board and photographic image pieces at https://boneboard-modern.vercel.app/rendered/. Local paths are `/modern/` and `/modern/rendered/`. Both local collections now include Silly AI, a deliberately weak opponent with legal moves, playful commentary, and an Arrange freely option. This gameplay update has not yet been published. A third variant, [Play](web-demo/play/README.md), is a two-player chess interface with seven styles, published at https://boneboard-play.vercel.app; it has its own `package.json` (`npm run dev` on port 4191, `npm test`).
 
 An animated pixel-art chess playground with four characters in a medieval courtyard. Public preview: [boneboard.vercel.app](https://boneboard.vercel.app).
 
@@ -30,7 +34,15 @@ npx playwright install chromium
 npm run test:browser
 ```
 
+`web-demo/package.json` also defines `npm run test:modern`, `test:silly` and `test:rendered` for the Modern, Silly AI and Rendered collections (same requirements: `npm start` running, Playwright Chromium installed).
+
 Browser checks exercise desktop/mobile rendering, all four characters, legal movement, targeting, directional lunges, collapse, reset cancellation, keyboard input, fullscreen, sharing, and the duel. Screenshots and results are written to the ignored `web-demo/test-artifacts/` folder.
+
+## Screenshots
+
+![Boneboard Rendered Collection: top-down board with photographic pieces and seven style cards](docs/screenshots/rendered.webp)
+
+The Rendered Collection at `/rendered/`: fixed top-down board, photographic piece images and seven switchable styles.
 
 ## Controls
 
